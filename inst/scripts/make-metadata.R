@@ -105,7 +105,7 @@ metadata <-
             "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 18. See ?faahKO for details",
             "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 19. See ?faahKO for details",
             "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 21. See ?faahKO for details",
-            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 22. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 22. See ?faahKO for details"
         ),
         BiocVersion = c(
             rep("3.17", 10),
@@ -204,7 +204,7 @@ metadata <-
             "https://zenodo.org/records/19606563/files/wt21.CDF",
             "https://zenodo.org/records/19606563/files/wt22.CDF"
         ),
-        SourceVersion = rep("1.0", 37),
+        SourceVersion = rep("1.0", 48),
         Species = c(
             "Saccharomyces cerevisiae",
             "Saccharomyces cerevisiae",
@@ -289,7 +289,7 @@ metadata <-
             rep("Spectra", 12)
         ),
         DispatchClass = c(
-            rep("FilePath", 3),
+            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
