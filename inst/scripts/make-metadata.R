@@ -8,7 +8,6 @@
 metadata <-
     data.frame(
         Title = c(
-            "ko15.CDF",
             "cptac_a_b_c_peptides.txt",
             "cptac_a_b_peptides.txt",
             "cptac_peptides.txt",
@@ -44,10 +43,21 @@ metadata <-
             "D19_15um30cm_SC1.mzML",
             "OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "D19_15um30cm_SC1.sage.tsv",
-            "OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
+            "OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv",
+            "ko15.CDF",
+            "ko16.CDF",
+            "ko18.CDF",
+            "ko19.CDF",
+            "ko21.CDF",
+            "ko22.CDF",
+            "wt15.CDF",
+            "wt16.CDF",
+            "wt18.CDF",
+            "wt19.CDF",
+            "wt21.CDF",
+            "wt22.CDF"
         ),
         Description = c(
-            "Raw metabolomics MS file in netCDF format. See ?ko15.CDF for details.",
             "Conditions A, B and C of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "Conditions A and B of the CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
             "CPTAC quantitative proteomics data (tab-delimited format). See ?cptac for details.",
@@ -83,10 +93,22 @@ metadata <-
             "Boekweg et al. (2022) SCP mzML file. See ?Boekweg2022 for details.",
             "Boekweg et al. (2022) bulk mzML file. See ?Boekweg2022 for details.",
             "Boekweg et al. (2022) Sage PSMs for D19_15um30cm_SC1. See ?Boekweg2022 for details.",
-            "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details."
+            "Boekweg et al. (2022) Sage PSMs for OR11_20160122_PG_HeLa_CVB3_CT_A. See ?Boekweg2022 for details.",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 15. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 16. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 18. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 19. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 21. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; KO 22. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 15. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 16. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 18. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 19. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 21. See ?faahKO for details",
+            "Saghatelian et al. (2004) FAAH knock-out LC-MS data; WT 22. See ?faahKO for details",
         ),
         BiocVersion = c(
-            rep("3.17", 11),
+            rep("3.17", 10),
             "3.19",
             "3.21",
             "3.21",
@@ -98,11 +120,11 @@ metadata <-
             rep("3.23", 10),
             "3.23",
             rep("3.23", 3),
-            rep("3.23", 4)
+            rep("3.23", 4),
+            rep("3.23", 12)
         ),
         Genome = "",
         SourceType = c(
-            "CDF",
             "TXT",
             "TXT",
             "TXT",
@@ -129,10 +151,10 @@ metadata <-
             "mzML",
             "mzML",
             "TSV",
-            "TSV"
+            "TSV",
+            rep("CDF", 12)
         ),
         SourceUrl = c(
-            "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://uclouvain-cbio.github.io/WSBIM2122/data/cptac_a_b_c_peptides.txt",
             "https://bioconductor.org/packages/3.16/data/experiment/html/msdata.html",
             "https://raw.githubusercontent.com/statOmics/PDA/data/quantification/fullCptacDatasSetNotForTutorial/peptides.txt",
@@ -168,11 +190,22 @@ metadata <-
             "ftp://massive-ftp.ucsd.edu/v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
             "ftp://massive-ftp.ucsd.edu/v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "https://zenodo.org/records/19370231/files/D19_15um30cm_SC1.sage.tsv",
-            "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv"
+            "https://zenodo.org/records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.sage.tsv",
+            "https://zenodo.org/records/19606563/files/ko15.CDF",
+            "https://zenodo.org/records/19606563/files/ko16.CDF",
+            "https://zenodo.org/records/19606563/files/ko18.CDF",
+            "https://zenodo.org/records/19606563/files/ko19.CDF",
+            "https://zenodo.org/records/19606563/files/ko21.CDF",
+            "https://zenodo.org/records/19606563/files/ko22.CDF",
+            "https://zenodo.org/records/19606563/files/wt15.CDF",
+            "https://zenodo.org/records/19606563/files/wt16.CDF",
+            "https://zenodo.org/records/19606563/files/wt18.CDF",
+            "https://zenodo.org/records/19606563/files/wt19.CDF",
+            "https://zenodo.org/records/19606563/files/wt21.CDF",
+            "https://zenodo.org/records/19606563/files/wt22.CDF"
         ),
         SourceVersion = rep("1.0", 37),
         Species = c(
-            "Mus musculus",
             "Saccharomyces cerevisiae",
             "Saccharomyces cerevisiae",
             "Saccharomyces cerevisiae",
@@ -194,10 +227,10 @@ metadata <-
             rep("", 10),
             "Mus musculus",
             rep("", 3),
-            rep("Homo sapiens", 4)
+            rep("Homo sapiens", 4),
+            rep("Mus musculus", 12)
         ),
         TaxonomyId = c(
-            "10090",
             "4932",
             "4932",
             "4932",
@@ -219,13 +252,13 @@ metadata <-
             rep("", 10),
             "10090",
             rep("", 3),
-            rep("9606", 4)
+            rep("9606", 4),
+            rep("10090", 12)
         ),
         Coordinate_1_based = "",
         DataProvider = "",
         Maintainer = "Laurent Gatto <laurent.gatto@uclouvain.be>",
         RDataClass = c(
-            "Spectra",
             "data.frame",
             "data.frame",
             "data.frame",
@@ -252,10 +285,10 @@ metadata <-
             "Spectra",
             "Spectra",
             "data.frame",
-            "data.frame"
+            "data.frame",
+            rep("Spectra", 12)
         ),
         DispatchClass = c(
-            "FilePath",
             "FilePath",
             "FilePath",
             "FilePath",
@@ -277,12 +310,13 @@ metadata <-
             rep("FilePath", 10),
             "FilePath",
             rep("FilePath", 3),
-            rep("FilePath", 4)
+            rep("FilePath", 4),
+            rep("FilePath", 12)
         ),
         ## NB: locally, the data are stored in the package's data directory, but
         ## in the Azure cloud, they are located in the package's root directory.
         Location_Prefix = c(
-            rep("", times = 10),
+            rep("", times = 9),
             "https://zenodo.org/",
             "https://zenodo.org/",
             "ftp://massive.ucsd.edu/",
@@ -309,10 +343,10 @@ metadata <-
             "ftp://massive-ftp.ucsd.edu/",
             "ftp://massive-ftp.ucsd.edu/",
             "https://zenodo.org/",
-            "https://zenodo.org/"
+            "https://zenodo.org/",
+            rep("https://zenodo.org/", 12)
         ),
         RDataPath = c(
-            "MsDataHub/cdf/ko15.CDF",
             "MsDataHub/cptac/cptac_a_b_c_peptides.txt",
             "MsDataHub/cptac/cptac_a_b_peptides.txt",
             "MsDataHub/cptac/cptac_peptides.txt",
@@ -348,7 +382,19 @@ metadata <-
             "v03/MSV000087524/updates/2021-11-01_hboekweg_5ab97297/raw/D19_15um30cm_SC1.mzML",
             "v03/MSV000087689/ccms_peak/Hela_bulk/OR11_20160122_PG_HeLa_CVB3_CT_A.mzML",
             "records/19370231/files/D19_15um30cm_SC1.tsv",
-            "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.tsv"
+            "records/19370231/files/OR11_20160122_PG_HeLa_CVB3_CT_A.tsv",
+            "records/19606563/files/ko15.CDF",
+            "records/19606563/files/ko16.CDF",
+            "records/19606563/files/ko18.CDF",
+            "records/19606563/files/ko19.CDF",
+            "records/19606563/files/ko21.CDF",
+            "records/19606563/files/ko22.CDF",
+            "records/19606563/files/wt15.CDF",
+            "records/19606563/files/wt16.CDF",
+            "records/19606563/files/wt18.CDF",
+            "records/19606563/files/wt19.CDF",
+            "records/19606563/files/wt21.CDF",
+            "records/19606563/files/wt22.CDF"
         ),
         Tags = ""
     )

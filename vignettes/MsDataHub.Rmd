@@ -133,19 +133,6 @@ cptac_a_b_c_peptides.txt()
 cptac_a_b_peptides.txt()
 ```
 
-## FAAH KO
-
-- Type: Raw MS data, in netCDF format.
-- File: `ko15.CDF`
-- More details: `?cdf`
-
-Load with
-
-```{r, eval = TRUE}
-f <- ko15.CDF()
-Spectra(f)
-```
-
 ## DIA-NN software outputs
 
 - Type: tab-delimited DIA quantitative proteomics data tables produced
@@ -270,6 +257,36 @@ Example MS3 SPS TMT data.
   TMT 11-plex experiment.
 - `fdms3tmt11.rda` contains a data.frame with identification data for
   `MS3TMT11.mzML`.
+
+## MS data files in CDF format
+
+Example MS data files in (AIA/ANDI) NetCDF format. Data from the article from 
+Saghatelian et al. (*Assignment of endogenous substrates to enzymes by global 
+metabolite profiling*, Biochemistry, 2004) 
+[doi](http://dx.doi.org/10.1021/bi0480335) representing LC-MS measurement from 6
+FAAH knock-out and 5 wild type mice acquired in positive ionization mode. The
+data is subset to an *m/z* range of 200-600 and a retention time range from
+2500-4500 seconds. The available data files are:
+
+- *ko15.CDF*
+- *ko16.CDF*
+- *ko18.CDF*
+- *ko19.CDF*
+- *ko21.CDF*
+- *ko22.CDF*
+- *wt15.CDF*
+- *wt16.CDF*
+- *wt18.CDF*
+- *wt19.CDF*
+- *wt21.CDF*
+- *wt22.CDF*
+
+Example how to load one of the available files:
+
+```{r}
+f <- MsDataHub::ko15.CDF()
+Spectra(f)
+```
 
 # Adding data to `MsDataHub`
 

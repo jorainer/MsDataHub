@@ -1,6 +1,6 @@
 Package: MsDataHub
 Title: Mass Spectrometry Data on ExperimentHub
-Version: 1.11.4
+Version: 1.11.5
 Authors@R:
     c(person(given = "Laurent",
              family = "Gatto",
@@ -20,7 +20,12 @@ Authors@R:
              family = "Deflandre",
              email = "guillaume.deflandre@uclouvain.be",
              role = "ctb",
-             comment = c(ORCID = "0009-0008-1257-2416")))
+             comment = c(ORCID = "0009-0008-1257-2416")),
+      person(given = "Steffen", family = "Neumann",
+	     email = "sneumann@ipb-halle.de",
+	     role = "ctb",
+	     comment = c(ORCID = "0000-0002-7899-7192"))
+	     )
 Description: The MsDataHub package uses the ExperimentHub
              infrastructure to distribute raw mass spectrometry data
              files, peptide spectrum matches or quantitative data from

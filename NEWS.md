@@ -1,6 +1,11 @@
 # MsDataHub 1.11
 
+# MsDataHub 1.11.5
+
+- Add raw data files from the *faahKO* R package.
+
 # MsDataHub 1.11.4
+
 - Add DDA and DIA proteomics data to illustrate
   `QFeatures::readQFeatures()`.
 - Various fixes.
