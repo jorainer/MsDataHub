@@ -289,7 +289,7 @@ metadata <-
             rep("Spectra", 12)
         ),
         DispatchClass = c(
-            "FilePath",
+            rep("FilePath", 3),
             "FilePath",
             "FilePath",
             "FilePath",
